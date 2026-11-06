@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <!-- Premium Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:background="@drawable/bg_header"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T A T K A L X"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.15"
+                        android:text="SMART RAILWAY BOOKING"
+                        android:textColor="#B8D3F5"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btnProfile"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/bg_card"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="PS"
+                    android:textColor="#123C70"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="3dp"
+                android:text="YOUR JOURNEY,\nOUR PRIORITY."
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="Book smarter. Travel better."
+                android:textColor="#D4E4F7"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Booking Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="-35dp"
+            android:background="@drawable/bg_card"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Plan Your Journey"
+                    android:textColor="#102747"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#E7F0FF"
+                    android:padding="8dp"
+                    android:text="TATKAL"
+                    android:textColor="#1765C0"
+                    android:textSize="11sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="FROM STATION"
+                android:textColor="#738198"
+                android:textSize="11sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/fromStation"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_field"
+                android:hint="Enter departure station"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="#102747"
+                android:textColorHint="#8995A5"
+                android:inputType="textCapWords"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="TO STATION"
+                android:textColor="#738198"
+                android:textSize="11sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/toStation"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_field"
+                android:hint="Enter destination station"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="#102747"
+                android:textColorHint="#8995A5"
+                android:inputType="textCapWords"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="JOURNEY DATE"
+                android:textColor="#738198"
+                android:textSize="11sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/journeyDate"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/bg_field"
+                android:hint="Select journey date"
+                android:padding="15dp"
+                android:textColor="#102747"
+                android:textColorHint="#8995A5"
+                android:focusable="false"
+                android:clickable="true"
+                android:singleLine="true"/>
+
+            <Button
+                android:id="@+id/searchTrains"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@null"
+                android:elevation="3dp"
+                android:text="SEARCH TRAINS   →"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnBookingHistory"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_card"
+                android:backgroundTint="@null"
+                android:elevation="1dp"
+                android:text="VIEW BOOKING HISTORY   📋"
+                android:textColor="#1765C0"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <!-- Popular Routes -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="27dp"
+            android:text="Popular Destinations"
+            android:textColor="#102747"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/bg_card"
+            android:elevation="2dp"
+            android:padding="18dp"
+            android:text="🚆  Hyderabad  →  Bengaluru\n\n🚆  Hyderabad  →  Chennai\n\n🚆  Hyderabad  →  Mumbai"
+            android:textColor="#243B59"
+            android:textSize="15sp"
+            android:lineSpacingExtra="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:text="TATKALX  •  SMART RAILWAY BOOKING"
+            android:textColor="#8793A5"
+            android:textSize="10sp"
+            android:letterSpacing="0.12"/>
+
+    </LinearLayout>
+
+</ScrollView>
